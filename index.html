@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wordpad-container">
+        
+        <!-- Tabs Section -->
+        <div class="tabs-container">
+            <div class="tabs" id="tabs">
+                <!-- Tabs will be added dynamically here -->
+            </div>
+            <button id="addTabBtn"><span class="material-icons">add</span></button>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button class="btn bold" onclick="boldText()">
+                <span class="material-icons">format_bold</span>
+            </button>
+
+            <button class="btn italic" onclick="italicText()">
+                <span class="material-icons">format_italic</span>
+            </button>
+
+            <button class="btn underline" onclick="underlineText()">
+                <span class="material-icons">format_underlined</span>
+            </button>
+
+            <button class="btn underline" onclick="strikethroughText()">
+                <span class="material-icons">format_strikethrough</span>
+            </button>
+
+            <button class="btn increase" onclick="increaseFontSize()">
+                <span class="material-icons">text_increase</span>
+            </button>
+
+            <button class="btn decrease" onclick="decreaseFontSize()">
+                <span class="material-icons">text_decrease</span>
+            </button>
+            
+            <button class="btn clear" id="clearBtn">
+                <span class="material-icons">delete_forever</span> Clear
+            </button>
+        
+            <button class="btn save-txt" id="saveBtn">
+                <span class="material-icons">save</span> Save as .txt
+            </button>
+        
+            <button class="btn import" id="importBtn">
+                <span class="material-icons">upload_file</span> Import .txt
+            </button>
+            
+            <button class="btn save-pdf" id="savePdfBtn">
+                <span class="material-icons">picture_as_pdf</span> Save as PDF
+            </button>
+
+            <a href="Wordpad_Info.pdf" target="_blank">
+                <button>
+                    <span class="material-icons">info</span>
+                </button>
+            </a>            
+        </div>
+
+        <!-- Editor Section -->
+        <div id="editorContainer">
+            <!-- Editor Tabs will be added dynamically -->
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
