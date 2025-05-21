@@ -13,7 +13,7 @@ This is a simple Word Pad clone built using HTML, CSS, and JavaScript. The appli
 
 ## 🚀 Live Demo
 
-👉 [Click here to try it](https://master123.netlify.app/9.%20word%20pad/)
+👉 [Click here to try it](https://word-note.netlify.app/)
 
 ## 📁 Technologies Used
 
